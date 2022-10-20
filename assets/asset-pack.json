@@ -1,0 +1,36 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/coin.png",
+                "type": "image",
+                "key": "coin"
+            },
+            {
+                "url": "assets/dino.png",
+                "key": "dino",
+                "type": "image"
+            },
+            {
+                "atlasURL": "assets/flares.json",
+                "textureURL": "assets/flares.png",
+                "type": "atlas",
+                "key": "flares"
+            },
+            {
+                "url": [
+                    "assets/hover.wav"
+                ],
+                "type": "audio",
+                "key": "hover"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

@@ -1,0 +1,79 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level"
+    },
+    "displayList": [
+        {
+            "type": "ArcadeSprite",
+            "id": "66e0ae4e-60c4-4f08-b597-8357dd2215dc",
+            "label": "dino",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "dino"
+            },
+            "x": 152,
+            "y": 304,
+            "scaleX": 0.47539744874385037,
+            "scaleY": 0.4023224229103636,
+            "collideWorldBounds": true,
+            "body.width": 250,
+            "body.height": 250
+        },
+        {
+            "type": "ArcadeSprite",
+            "id": "24be8ea3-6081-4109-bfb5-47059b950bf5",
+            "label": "coin",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "coin"
+            },
+            "x": 605,
+            "y": 331,
+            "scaleX": 0.3,
+            "scaleY": 0.3,
+            "physicsType": 1,
+            "collideWorldBounds": true,
+            "immovable": true,
+            "bodyGeometry": 0,
+            "radius": 40,
+            "body.width": 360,
+            "body.height": 360,
+            "body.offset.x": 140,
+            "body.offset.y": 140
+        },
+        {
+            "type": "Text",
+            "id": "d65b1844-6027-48ff-a20f-644fbcdedd3f",
+            "label": "scoreText",
+            "scope": "CLASS",
+            "components": [],
+            "x": 66,
+            "y": 60,
+            "text": "ZAIN SCORE:"
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "b64b1593-7995-48e7-b986-59793b5c4cbf",
+            "type": "Collider",
+            "label": "collider",
+            "object1": "dino",
+            "object2": "coin",
+            "collideCallback": "this.collectCoin",
+            "processCallback": "null",
+            "callbackContext": "this"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
